@@ -1,0 +1,4 @@
+# Install pinned CPU PyTorch first; see build/README.md.
+numpy==1.26.4
+soundfile==0.12.1
+demucs==4.0.1

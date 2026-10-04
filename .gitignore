@@ -1,0 +1,36 @@
+# Generated application bundles and release assets
+/dist/
+/installer/
+/uninstall.exe
+/unins*.exe
+/unins*.dat
+
+# Local build tools, dependency notices, and temporary test output
+/.build/
+/.runtime/
+/.legacy/
+/build/vendor/
+/build/notices/
+
+# User audio, models, libraries, and settings
+/.app-data/
+/songs/
+/models/
+*.th
+*.partial
+.env
+.env.*
+
+# Python environments and generated metadata
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Editor and operating system files
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

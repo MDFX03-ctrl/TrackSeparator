@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Track Separator</title><link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script></head>
+<body>
+<main>
+  <header><div><p class="eyebrow">LOCAL AUDIO TOOL</p><h1>Track Separator</h1><p>Separate a track into vocals, drums, bass, guitar, piano, and other.</p></div><button id="quit" class="quiet">Quit app</button></header>
+  <p id="message" role="status" aria-live="polite"></p>
+  <section id="drop"><h2>Choose a track</h2><p>Drop one audio file here, or choose a file. Up to 15 minutes.</p><input id="file" type="file" accept="audio/*,.flac,.aiff,.wma"><p class="hint">WAV, MP3, M4A, AAC, OGG, FLAC, AIFF, WMA · Audio stays on your computer.</p></section>
+  <section><div class="section-heading"><h2>Processing</h2><button id="cancel" hidden>Cancel</button></div><p id="job">No processing jobs.</p><div id="retries"></div><details><summary>Model setup</summary><p id="modelState"></p><button id="model">Download model (about 52 MB)</button><p class="hint">One explicit download. Separation works offline afterward.</p></details></section>
+  <section id="listen" hidden><div class="section-heading"><h2 id="trackTitle">Stems</h2><button id="openFolder">Open stems folder</button></div><p class="hint">Your six WAV stems are saved on this computer.</p><p id="stemFolder" class="folder"></p><label for="lane">Listen to</label><select id="lane"></select><audio id="audio" controls controlslist="nodownload" preload="none"></audio></section>
+  <section><h2>Your tracks</h2><div id="library"></div></section>
+  <details class="settings"><summary>Library and settings</summary><label for="libraryPath">Library folder</label><input id="libraryPath" type="text"><button id="changeLibrary">Use this folder</button><p class="hint">Changing folders leaves your existing tracks in place.</p><button id="showTrash" class="quiet">Show trash</button><div id="trash"></div></details>
+  <footer>Track Separator · Six-stem separation with Demucs · Local processing</footer>
+</main>
+</body></html>
