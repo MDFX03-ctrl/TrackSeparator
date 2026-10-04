@@ -1,5 +1,7 @@
 # Track Separator
 
+[English](README.md) | [简体中文](README-CN.md)
+
 A local Windows app that separates a track into **vocals, drums, bass, guitar,
 piano, and other**. Import one file, separate it, listen to individual stems,
 and open the folder containing the full-quality WAV stems. No account, API key, cloud inference,
